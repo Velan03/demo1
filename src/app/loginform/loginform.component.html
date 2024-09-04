@@ -1,0 +1,39 @@
+<section>
+  <form [formGroup]="mydata" (ngSubmit)="onSubmit()">
+    <div id="div_box">
+      <label for="name">Name</label>
+      <input id="name" formControlName="name">
+      <div *ngIf="mydata.get('name').invalid && mydata.get('name').touched" class="error">Name is required.</div>
+    </div>
+    
+    <div id="div_box">
+      <label for="email">Email</label>
+      <input id="email" formControlName="email">
+      <div *ngIf="mydata.get('email').invalid && mydata.get('email').touched" class="error">
+        <div *ngIf="mydata.get('email').errors?.required">Email is required.</div>
+        <div *ngIf="mydata.get('email').errors?.email">Invalid email format.</div>
+      </div>
+    </div>
+    
+    <div id="div_box">
+      <label for="pass">Password</label>
+      <input id="pass" type="password" formControlName="pass">
+      <div *ngIf="mydata.get('pass').invalid && mydata.get('pass').touched" class="error">
+        <div *ngIf="mydata.get('pass').errors?.required">Password is required.</div>
+        <div *ngIf="mydata.get('pass').errors?.minlength">Password must be at least 6 characters long.</div>
+      </div>
+    </div>
+    
+    <div id="div_box">
+      <label for="cpass">Confirm Password</label>
+      <input id="cpass" type="password" formControlName="cpass">
+      <div *ngIf="mydata.get('cpass').invalid && mydata.get('cpass').touched" class="error">
+        <div *ngIf="mydata.get('cpass').errors?.required">Confirm Password is required.</div>
+        <div *ngIf="mydata.get('cpass').errors?.minlength">Confirm Password must be at least 6 characters long.</div>
+        <div *ngIf="!passmatch && mydata.get('cpass').touched" class="error">Passwords must match.</div>
+      </div>
+    </div>
+    
+    <button type="submit" [disabled]="mydata.invalid" >sign-up</button>
+  </form>
+</section>

@@ -1,0 +1,92 @@
+
+section{
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 120vh;
+    border: 2px solid red;
+    box-sizing: border-box;
+    background-color: black;
+    background: url('../../assets/how-electronic-proof-of-delivery-is-enabling-logistics-companies-fast-track-billing-and-collection.webp') no-repeat;
+    background-size:cover;
+     
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px;
+    padding: 30px;
+    width: 25vw;
+    height: 80vh;
+    border: 2px solid;
+    background: blur(10%);
+    filter:drop-shadow(2px 2px 9px rgb(0, 0, 0)) ; 
+    background-color: rgb(182, 220, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    position: relative;
+    left: 370px;
+    bottom: 20px;
+}
+form:hover{
+    box-shadow: 0px 0px 19px rgb(0, 0, 0);
+}
+label{
+    // border: 2px solid;
+    height: 20px;
+    width: 20vw;
+}
+input{
+    color: rgb(0, 0, 0);
+    background: transparent;
+    border: none ;
+    height: 31px;
+    width: 20vw;
+    border-bottom:2px solid rgb(0, 0, 0);
+    padding: 0px 10px;
+}
+input:hover{
+    box-shadow: 2px 2px 8px rgb(0, 0, 0);
+    border-radius: 20px;
+
+}
+button{
+    color: rgb(2, 3, 3);
+    border: 2px solid;
+    height: 15vh;
+    width: 15vw;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bolder;
+    background-color:transparent ; 
+}
+button:hover{
+    box-shadow: inset 0px 0px 8px rgb(0, 0, 0);
+}
+.error{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border: 2px solid red;
+    height: 5vh; 
+    width: 25vw; 
+}
+#div_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 40vh;
+    padding: 0;
+    width: 25vw; 
+    // border: 2px solid;
+}

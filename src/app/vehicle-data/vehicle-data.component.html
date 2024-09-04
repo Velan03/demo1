@@ -1,0 +1,49 @@
+<section> 
+  <form  [formGroup]="formData" (ngSubmit)="onSubmit()">
+    <div class="filed_box">
+      <label for="vehicleName">Vehicle Name</label>
+      <input type="text" id="vehicleName" formControlName="vehicleName">
+      <div *ngIf="formData.get('vehicleName').invalid && formData.get('vehicleName').touched && formData.get('vehicleName').error" class="error">enter the vehicle Name</div>
+    </div>
+    
+    <div class="filed_box"  >
+      <label for="vehicleType">Vehicle Type</label>
+      <select id="vehicleType" formControlName="vehicleType">
+        <option value="type"></option>
+        <option value="type">CAR</option>
+        <option value="type">BIKE</option>
+        <option value="type">TRUCK</option>
+      </select>
+    </div>
+    
+    <div class="filed_box">
+      <label for="insurance">Insurance</label>
+      <input type="text" id="insurance" formControlName="insurance">
+    </div>
+    
+    <div class="filed_box">
+      <label for="license">License</label>
+      <input type="text" id="license" formControlName="license">
+    </div>
+    
+    <div class="filed_box" *ngIf="city">
+      <label for="city">City</label>
+      <select id="city" formControlName="city">
+        <option *ngFor="let city of city" [value]="city">{{city.city}}</option>
+      </select>
+    </div>
+    
+    <div class="filed_box">
+      <label for="licenseNumber">License Number</label>
+      <input type="number" id="licenseNumber" formControlName="licenseNumber">
+    </div>
+    
+    <div class="filed_box">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+
+  <div class="image_filed">
+    <input type="file" id="img_filed">
+  </div>
+</section>
