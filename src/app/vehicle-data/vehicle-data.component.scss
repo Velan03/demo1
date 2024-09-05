@@ -11,7 +11,7 @@ section{
     box-sizing: border-box;
     background-color:aliceblue; 
     gap: 20px;
-    // background:url();
+    background:url('../../assets/social-media-sketch-vector-seamless-600nw-1660950727.webp') ;
 }
 
 form{
@@ -19,58 +19,78 @@ form{
     display: grid;
     grid-template-columns: auto auto; 
     box-sizing: border-box;
-    gap: 20px;
-    margin: 10px;
+    // gap: 20px;
+    // margin: 10px;
     padding: 20px 10px;
     width: 60vw;
-    height: 70vh;
+    height: 90vh;
     border: 2px solid rgb(0, 0, 0);
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(188, 166, 166);
     color: rgb(0, 0, 0);
-    border-radius: 20px;
+    border-radius: 20px; 
+    opacity: 80%;
 }
 .filed_box{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    box-sizing: border-box;
     color: rgb(0, 0, 0);
     // border: 2px solid;
-    height: 50px;
+    height: 20vh;
     width: 28vw;
-    gap: 10px;
+    gap: 5px;
 }
 form:hover{
     box-shadow: 0px 0px 19px white;
 }
 label{
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     // border: 2px solid;
-    height: 30px;
-    width: 10vw;
+    height: 32px;
+    width: 13vw;
     font-size: 15px;
     font-weight: bolder;
+    color: #000;
+}
+h3{
+    color: red;
 }
 input{
     color: rgb(0, 0, 0);
     background: transparent;
     border: none ;
     height: 32px;
-    width: 13vw;
+    width: 25vw;
     border-bottom:2px solid rgb(0, 0, 0);
     padding: 0px 10px;
+    // border: 2px solid;
 }
+
 input:hover{
     box-shadow: 2px 2px 8px rgb(0, 0, 0);
     // border-radius: 20px;
 
 }
 select{
-    width: 13vw;
-    height: 5vh;
+    height: 32px;
+    width: 26vw;
     font-size: 16px;
     font-weight: bolder;
+    background:opacity( 20%);
+}
+.error{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    border: 2px solid red;
+    height: 3vh; 
+    width: 25vw; 
+    padding: 10px;
 }
 button{
     
@@ -91,13 +111,13 @@ button:hover{
 }
 .image_filed{ 
     box-sizing: border-box; 
-    height: 30vh;
+    height: 35vh;
     width: 20vw;
     border: 2px solid ;
     position: relative;
     box-sizing: border-box;
     bottom: 100px;
-    border-radius: 100px 100px 100px 100px;
+    border-radius: 20PX;
     background: url('../../assets/CAR.jpg') no-repeat;
     background-size: cover;
     background-position: center;  
@@ -108,18 +128,9 @@ button:hover{
     border: 2px solid;
     border-radius: 100% 100% ; 
     position: relative;
-    top: 110px;
+    top: 150px;
     left: 200px;  
     background: url('../../assets/plus\ symbol.jpg') no-repeat;
     background-position: center;
     background-size: cover; 
 }   
-.error{ 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: red;
-    border: 2px solid red;
-    height: 5vh; 
-    width: 25vw; 
-}
